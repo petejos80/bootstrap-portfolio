@@ -6,7 +6,8 @@ h1, h2, h3, h4, h5 {
 }
 
 h2 {
-    font-weight: 900;
+	font-weight: 900;
+	font-size: 25px;
 }
 
 hr {
@@ -20,26 +21,40 @@ p {
     font-size: 16px;
 }
 
-/*Center about me text */
-.aligncenter {
-	text-align: center;
+/* BODY STYLES */
+body {
+    background-color: #DCDCDC;
 }
 
 /* NAV STYLES */
 
-/*border next to nav menu links */
-nav a {
-	font-weight: 600;
-    padding: 10px 0px 10px;
-    border-left: 2px solid #dcdcdc;
-	color: #666;
+.nobordera {
+	border-left: none !important;
 }
 
-#sitetitle a {
-	font-size: 800px;
+.navbar-brand {
+	font-size: 2em;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	background-color: #3f5c94;
+	padding: 30px;
+	font-weight: 900;
+	line-height: 0px;
 }
 
-/* dark grey hover for nav links */
+.navbar-default .navbar-brand {
+	color: #fff;
+	background-color: #3f5c94;
+}
+
+.navbar-default .navbar-brand:hover {
+	background-color: #3f5c94; 
+	color: #fff;
+}
+
+.navbar-header {
+	padding-top: 20px;
+}
+
 nav a:hover {
 	text-decoration: none;
 	color: #3f5c94;
@@ -50,13 +65,52 @@ nav a:hover {
 	background-colod: #3f5c94;
 }
 
-/* BODY STYLES */
-body {
-    background-color: #DCDCDC;
+.navbar-right {
+	padding-top: 0px;
 }
 
+/** NAV MEDIA QUERIES **/
+@media screen and (min-width: 768px) {
+	.navbar-default .navbar-nav>li>a {
+		font-weight: 600;
+		font-size: 16px;
+		padding: 3px 20px 3px;
+		border-left: 2px solid #dcdcdc;
+		color: #777;
+	}
+}
 
-/* FONT AWESOME ICONS */
+@media screen and (max-width: 768px) {
+	.navbar-default .navbar-nav>li>a {
+		border-bottom: 1px solid #ddd;
+		font-weight: 700;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.navbar-default .navbar-nav>li>a:hover {
+		background-color: #ddd;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.navbar-right {
+		padding-top: 40px;
+	}
+}
+
+/* BODY STYLES */
+
+
+
+/* CONTENT SIDEBAR STYLES */
+
+/*Center about me text */
+.aligncenter {
+	text-align: center;
+}
+
+/** FONT AWESOME ICONS **/
 .socialicons {
 	text-align: center;
 	padding-top: 10px;
@@ -72,6 +126,7 @@ body {
 	color: #fff;
 	padding: 5px 10px 5px 10px;
 	border-radius: 5px;
+	font-size: 3.9em;
 }
 
 .git:hover, .linkedin:hover, .stackoverflow:hover {
@@ -82,19 +137,16 @@ body {
 
 .git {
 	background: #171515;
-	font-size: 5em;
 	margin: 0 20px 0 0px;
 }
 
 .linkedin {
 	background: #0077b5;
-	font-size: 5em;
 	margin: 0 20px 0 0px;
 }
 
 .stackoverflow {
 	background: #f48023;
-	font-size: 5em;
 	margin: 0 0px 0 0px;
 }
 
