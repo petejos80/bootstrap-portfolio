@@ -33,7 +33,7 @@ body {
 }
 
 .navbar-brand {
-	font-size: 2em;
+	font-size: 1.9em;
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	background-color: #3f5c94;
 	padding: 30px;
@@ -101,7 +101,51 @@ nav a:hover {
 
 /* BODY STYLES */
 
+/** PORTFOLIO PAGE STYLES **/
 
+.portfolioimg {
+	padding-bottom: 15px;
+}
+
+.caption {
+	width:100%;
+	bottom: .3rem;
+	position: absolute;
+	background:#000;
+	background: -webkit-linear-gradient(bottom, #000 40%, rgba(0, 0, 0, 0) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+	background: -moz-linear-gradient(bottom, #000 40%, rgba(0, 0, 0, 0) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+	background: -o-linear-gradient(bottom, #000 40%, rgba(0, 0, 0, 0) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+	background: linear-gradient(to top, #000 40%, rgba(0, 0, 0, 0) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+ .thumbnail {
+	border: 0 none;
+	box-shadow: none;
+	margin:0px;
+	padding:0;
+} 
+
+.thumbnail .caption {
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+.thumbnail a>img {
+	margin-right: -3px;
+	margin-left: 3px;
+}
+
+/* panel padding correction for images */
+.panel-body-portfolio {
+	padding: 15px 18px 15px 12px;
+}
+
+/* font formatting for portfolio h2 overlay */
+.ptfh4 {
+	font-weight: 900;
+	color: #fff;
+	font-size: 2em;
+}
 
 /* CONTENT SIDEBAR STYLES */
 
@@ -122,6 +166,12 @@ nav a:hover {
 	-webkit-font-smoothing: antialiased;
 }
 
+.git:hover, .linkedin:hover, .stackoverflow:hover {
+	color: #666;
+	background-color: #BEBEBE;
+	text-decoration: underline;
+}
+
 .git, .linkedin, .stackoverflow {
 	color: #fff;
 	padding: 5px 10px 5px 10px;
@@ -129,20 +179,16 @@ nav a:hover {
 	font-size: 3.9em;
 }
 
-.git:hover, .linkedin:hover, .stackoverflow:hover {
-	color: #666;
-	background-color: #BEBEBE;
-	text-decoration: underline;
+.git, .linkedin {
+	margin: 0 20px 0 0px;
 }
 
 .git {
 	background: #171515;
-	margin: 0 20px 0 0px;
 }
 
 .linkedin {
 	background: #0077b5;
-	margin: 0 20px 0 0px;
 }
 
 .stackoverflow {
