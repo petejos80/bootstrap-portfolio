@@ -1,2 +1,2 @@
 # bootstrap-portfolio
-Basic Bootstrap web developer portfolio 
+Basic Bootstrap web developer portfolio.
